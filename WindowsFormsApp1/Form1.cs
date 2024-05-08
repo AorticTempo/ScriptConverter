@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         private void btnConvert_Click(object sender, EventArgs e)
         {
             string text = Convert.ToString(rtxtInput.Text);
-            char[] list = text.ToCharArray();
+            char[] list = text.ToLower().ToCharArray();
             rtxtOuput.Text = convertManager.convertTo("piglin", list);
         }
     }
